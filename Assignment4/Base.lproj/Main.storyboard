@@ -28,11 +28,11 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRz-25-5e1">
-                                        <rect key="frame" x="55" y="122" width="320" height="458"/>
+                                    <datePicker contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRz-25-5e1">
+                                        <rect key="frame" x="55" y="122.33333333333337" width="320" height="458"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </datePicker>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONW-TV-WQj">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONW-TV-WQj">
                                         <rect key="frame" x="142.33333333333331" y="682.33333333333337" width="145.33333333333331" height="34.333333333333371"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="Button"/>
@@ -48,6 +48,12 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="XRz-25-5e1" firstAttribute="top" secondItem="Ae2-rs-sBG" secondAttribute="bottom" constant="102" id="Dzo-9Y-3oj"/>
+                                    <constraint firstItem="ONW-TV-WQj" firstAttribute="top" secondItem="XRz-25-5e1" secondAttribute="bottom" constant="102" id="IBP-iv-W4h"/>
+                                    <constraint firstItem="ONW-TV-WQj" firstAttribute="top" secondItem="XRz-25-5e1" secondAttribute="bottom" constant="102" id="UQz-Cp-CXG"/>
+                                    <constraint firstItem="5iO-KV-EVH" firstAttribute="top" secondItem="ONW-TV-WQj" secondAttribute="bottom" constant="102" id="vZh-hT-eLg"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
