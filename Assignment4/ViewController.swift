@@ -31,7 +31,8 @@ class ViewController: UIViewController {
         startClock()
         setButton()
         setTimerLabel()
-        datePicker.setValue(UIColor.white, forKey: "textColor")
+        
+    
         
        
         
@@ -103,7 +104,7 @@ class ViewController: UIViewController {
             do {
                 
                 try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [])
-                print("LALA2")
+               
                 try AVAudioSession.sharedInstance().setActive(true)
                 
                 
