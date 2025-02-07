@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     
     func setTimerLabel() {
         //starting text value for timer.
-        timerLabel.text = ""
+        timerLabel.text = "Waiting for timer."
     }
     
     func setButton() {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="ipad10_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,46 +13,53 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aEh-ma-DVh">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="102" translatesAutoresizingMaskIntoConstraints="NO" id="tao-Zl-6Ju">
-                                <rect key="frame" x="0.0" y="59" width="430" height="839"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tao-Zl-6Ju">
+                                <rect key="frame" x="0.0" y="24" width="820" height="1136"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae2-rs-sBG">
-                                        <rect key="frame" x="194.33333333333334" y="0.0" width="41.333333333333343" height="20.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="820" height="284"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <datePicker contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRz-25-5e1">
-                                        <rect key="frame" x="55" y="122.33333333333337" width="320" height="458"/>
+                                        <rect key="frame" x="0.0" y="284" width="820" height="284"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </datePicker>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONW-TV-WQj">
-                                        <rect key="frame" x="142.33333333333331" y="682.33333333333337" width="145.33333333333331" height="34.333333333333371"/>
-                                        <color key="tintColor" systemColor="labelColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="startStopButton"/>
-                                        <connections>
-                                            <action selector="clickTimerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NV7-V0-HaC"/>
-                                        </connections>
-                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wlE-Ow-yWQ">
+                                        <rect key="frame" x="0.0" y="568" width="820" height="284"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONW-TV-WQj">
+                                                <rect key="frame" x="337.5" y="125" width="145.5" height="34.5"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="startStopButton"/>
+                                                <connections>
+                                                    <action selector="clickTimerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NV7-V0-HaC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ONW-TV-WQj" firstAttribute="centerY" secondItem="wlE-Ow-yWQ" secondAttribute="centerY" id="NCY-Is-EKB"/>
+                                            <constraint firstItem="ONW-TV-WQj" firstAttribute="centerX" secondItem="wlE-Ow-yWQ" secondAttribute="centerX" id="dqT-Vd-xiC"/>
+                                        </constraints>
+                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5iO-KV-EVH">
-                                        <rect key="frame" x="194.33333333333334" y="818.66666666666663" width="41.333333333333343" height="20.333333333333371"/>
+                                        <rect key="frame" x="0.0" y="852" width="820" height="284"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="XRz-25-5e1" firstAttribute="top" secondItem="Ae2-rs-sBG" secondAttribute="bottom" constant="102" id="Dzo-9Y-3oj"/>
-                                    <constraint firstItem="ONW-TV-WQj" firstAttribute="top" secondItem="XRz-25-5e1" secondAttribute="bottom" constant="102" id="IBP-iv-W4h"/>
-                                    <constraint firstItem="ONW-TV-WQj" firstAttribute="top" secondItem="XRz-25-5e1" secondAttribute="bottom" constant="102" id="UQz-Cp-CXG"/>
-                                    <constraint firstItem="5iO-KV-EVH" firstAttribute="top" secondItem="ONW-TV-WQj" secondAttribute="bottom" constant="102" id="vZh-hT-eLg"/>
+                                    <constraint firstAttribute="trailing" secondItem="XRz-25-5e1" secondAttribute="trailing" id="246-BL-z6y"/>
+                                    <constraint firstItem="XRz-25-5e1" firstAttribute="leading" secondItem="tao-Zl-6Ju" secondAttribute="leading" id="A6b-S9-gtz"/>
                                 </constraints>
                             </stackView>
                         </subviews>
